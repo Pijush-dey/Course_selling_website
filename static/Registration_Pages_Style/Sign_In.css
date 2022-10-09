@@ -1,0 +1,201 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+	background-color:  white;
+	position: relative;
+}
+
+header {
+	position: absolute;
+}
+
+.success {
+	width: 100%;
+	color: green;
+	font-weight: bold;
+    text-align: center;
+    font-size: 23px;
+	padding: 8px;
+	margin:0px;
+    margin: 75px;
+	margin-left: 0%;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    background-color:rgb(156, 236, 156);
+}
+
+.error {
+	width: 100%;
+	color: rgb(201, 42, 42);
+	font-weight: bold;
+    text-align: center;
+    font-size: 23px;
+	padding: 8px;
+	margin:0px;
+    margin: 75px;
+	margin-left: 0%;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    background-color:rgb(219, 139, 139);
+}
+
+.SignIn-form {
+	width: 22%;                           /*Important attribute*/
+	margin-top: 20%;                      /*Important attribute*/
+	transform: translate(178%,-26vh);     /*Important attribute*/
+	color: #fff;
+	border: 1px solid rgb(4, 30, 34);
+	padding: 0px 30px 18px;
+	background-color: rgb(241, 76, 76);
+	z-index: 0;
+}
+
+.SignIn-form h1 {
+	font-size: 26px;
+	text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0px 13px 0px;
+}
+
+.SignIn-form p{
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+.SignIn-form input {
+	font-size: 16px;
+	width: 100%;
+	padding: 10px 10px;
+	border: 0;
+	border-radius:5px;
+}
+
+.button {
+	font-size: 17px;
+	text-align: center;
+	font-weight: bold;
+	width: 40%;
+	margin: 12px 0px;
+	padding: 8px 10px;
+	border-radius: 5px;
+	border-width: 0px;
+}
+
+.button:hover {
+	background-color: rgb(146, 56, 230);
+	color:white;
+	cursor: pointer;
+}
+
+p a:hover {
+	color:black;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+@media screen and (min-width:1180px) 
+{
+	.SignIn-form {
+		width: 23%;                           /*Important attribute*/
+		margin-top: 22%;                      /*Important attribute*/
+		transform: translate(165%,-22vh);     /*Important attribute*/
+	}       
+}
+
+@media screen and (max-width:1180px) 
+{
+	.SignIn-form {
+		width: 26%;                           /*Important attribute*/
+		margin-top: 24%;                      /*Important attribute*/
+		transform: translate(142%,-22vh);     /*Important attribute*/
+	}       
+}
+
+@media screen and (max-width:1080px) 
+{
+	.SignIn-form {
+		width: 32%;                           /*Important attribute*/
+		margin-top: 26%;                      /*Important attribute*/
+		transform: translate(105%,-22vh);     /*Important attribute*/
+	}       
+}
+
+@media screen and (max-width:920px) 
+{
+	.SignIn-form {
+		width: 34%;                           /*Important attribute*/
+		margin-top: 22%;                      /*Important attribute*/
+		transform: translate(96%,-10vh);     /*Important attribute*/
+	}       
+}
+
+@media screen and (max-width:720px) 
+{
+	.SignIn-form {
+		width: 40%;                           /*Important attribute*/
+		margin-top: 30%;                      /*Important attribute*/
+		transform: translate(75%,-10vh);     /*Important attribute*/
+	}       
+}
+
+@media screen and (max-width:670px) 
+{
+	.SignIn-form {
+		width: 50%;                           /*Important attribute*/
+		margin-top: 39%;                      /*Important attribute*/
+		transform: translate(50%,-10vh);     /*Important attribute*/
+	}       
+}
+
+@media screen and (max-width:590px) 
+{
+	.SignIn-form {
+		width: 60%;                           /*Important attribute*/
+		margin-top: 50%;                      /*Important attribute*/
+		transform: translate(32%,-10vh);     /*Important attribute*/
+	}       
+}
+
+@media screen and (max-width:450px) 
+{
+	.SignIn-form {
+		width: 70%;                           /*Important attribute*/
+		margin-top: 60%;                      /*Important attribute*/
+		transform: translate(22%,-10vh);     /*Important attribute*/
+	}       
+}
+
+@media screen and (max-width:380px) 
+{
+	.SignIn-form {
+		width: 80%;                           /*Important attribute*/
+		margin-top: 70%;                      /*Important attribute*/
+		transform: translate(12%,-10vh);     /*Important attribute*/
+	}       
+}
+
+footer {
+    width: 100%;
+    margin: 0;
+    background-color: rgb(56, 101, 197);
+    font-size: 15px;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 10px 30px;
+    text-decoration: none;
+	position: fixed;
+	bottom: 0;
+}

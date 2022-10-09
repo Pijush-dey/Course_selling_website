@@ -1,0 +1,189 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+	background-color: white;
+	position: relative;
+}
+header {
+	position: absolute;
+}
+
+.msg {
+	width: 100%;
+	color: rgb(201, 42, 42);
+	font-weight: bold;
+	text-align: center;
+	font-size: 23px;
+	padding: 8px;
+	margin:0px;
+	margin: 75px;
+	margin-left: 0%;
+	position: fixed;
+	z-index: 4;
+	top: 0;
+	left: 0;
+	background-color:rgb(219, 139, 139);	
+}
+
+.SignUp-form {
+	width: 25%;                         /*Important attribute*/
+	margin-top: 15%;                     /*Important attribute*/
+	transform: translate(150%,-18vh);    /*Important attribute*/
+	color: #fff;
+	border: 1px solid rgb(4, 30, 34);
+	padding: 0px 30px 10px;
+	background-color: rgb(241, 76, 76);
+	z-index: 0;
+}
+.SignUp-form h1 {
+	font-size: 26px;
+	text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0px 13px 0px;
+}
+.SignUp-form p{
+	font-size: 16px;
+	margin: 10px 0;
+}
+.SignUp-form input {
+	font-size: 14px;
+	width: 95%;
+	padding: 8px 10px;
+	border: 0;
+	border-radius:5px;
+}
+.button {
+font-size: 17px;
+text-align: center;
+font-weight: bold;
+width: 40%;
+margin: 18px 0px;
+padding: 8px 10px;
+border-radius: 5px;
+border-width: 0px;
+}
+
+.button:hover {
+    background-color: rgb(146, 56, 230);
+	color:white;
+	cursor: pointer;
+}
+
+@media screen and (min-width:1180px) 
+{
+	.SignUp-form {
+		width: 28%;                           /*Important attribute*/
+		margin-top: 18%;                      /*Important attribute*/
+		transform: translate(130%,-22vh);     /*Important attribute*/
+	}       
+}
+
+@media screen and (max-width:1180px) 
+{
+	.SignUp-form {
+		width: 28%;                           /*Important attribute*/
+		margin-top: 19%;                      /*Important attribute*/
+		transform: translate(130%,-22vh);     /*Important attribute*/
+	}       
+}
+
+@media screen and (max-width:1000px) 
+{
+	.SignUp-form {
+		width: 34%;                           /*Important attribute*/
+		margin-top: 30%;                      /*Important attribute*/
+		transform: translate(95%,-22vh);     /*Important attribute*/
+	}       
+}
+
+@media screen and (max-width:850px) 
+{
+	.SignUp-form {
+		width: 40%;                           /*Important attribute*/
+		margin-top: 29%;                      /*Important attribute*/
+		transform: translate(75%,-12vh);     /*Important attribute*/
+	}       
+}
+
+@media screen and (max-width:720px) 
+{
+	.SignUp-form {
+		width: 50%;                           /*Important attribute*/
+		margin-top: 36%;                      /*Important attribute*/
+		transform: translate(50%,-12vh);     /*Important attribute*/
+	}       
+}
+
+@media screen and (max-width:590px) 
+{
+	.SignUp-form {
+		width: 60%;                           /*Important attribute*/
+		margin-top: 45%;                      /*Important attribute*/
+		transform: translate(32%,-12vh);     /*Important attribute*/
+	}       
+}
+
+@media screen and (max-width:500px) 
+{
+	.SignUp-form h1 {
+		font-size: 22px;
+		margin: 17px 0px 11px 0px;
+	}
+	.SignUp-form p{
+		font-size: 14px;
+		margin: 8px 0;
+	}
+	.SignUp-form input {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width:450px) 
+{
+	.SignUp-form {
+		width: 78%;                           /*Important attribute*/
+		margin-top: 48%;                      /*Important attribute*/
+		transform: translate(16%,-12vh);     /*Important attribute*/
+	}       
+}
+
+@media screen and (max-width:390px) 
+{
+	.SignUp-form {
+		width: 80%;                           /*Important attribute*/
+		margin-top: 50%;                      /*Important attribute*/
+		transform: translate(12%,-12vh);     /*Important attribute*/
+	}       
+}
+
+@media screen and (min-height:900px) {
+    .SignUp-form {
+		width: 50%;                           /*Important attribute*/
+		margin-top: 40%;                      /*Important attribute*/
+		transform: translate(49%,-12vh);     /*Important attribute*/
+	}       
+}
+
+footer {
+    width: 100%;
+    margin: 0;
+    background-color: rgb(56, 101, 197);
+    font-size: 15px;
+    z-index: 0;
+    color: white;
+    text-align: center;
+    padding: 10px 30px;
+    text-decoration: none;
+	position: fixed;
+	bottom: 0;
+}
+

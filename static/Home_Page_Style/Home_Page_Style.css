@@ -1,0 +1,587 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* display: flex;
+    flex-direction: row; */
+    position: relative;
+    background-color: snow;
+}
+
+/* ..............CSS for Header portion.................. */
+ul {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: flex-end;
+    width: 100%;
+    list-style-type:none;
+    margin: 0;
+    padding-right: 30px;
+    overflow: auto;
+    background-color: rgb(71, 117, 218);
+    position: fixed;
+    top: 0; right: 0;
+    z-index: 3;
+}
+
+li a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 19px 30px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(15, 15, 15);
+}
+
+@media screen and (max-width:580px) {      /* CSS for Icon Button */
+    .btn {
+        background-color: DodgerBlue;
+        border: none;
+        color: white;
+        padding: 12px 16px;
+        font-size: 16px;
+        cursor: pointer;
+        z-index: 4;
+        background-color:  rgb(71, 117, 218);
+    }
+    .btn:hover {
+        background-color: RoyalBlue;
+    }
+    ul {
+        position: absolute;
+        background-color: rgb(71, 117, 218);
+        height: 55vh;
+        width: 230px;
+        top:0;
+        left: 0;
+        z-index: 3;
+        padding: 0px;
+   }
+   ul li {
+        width: 100%;
+        margin: 0px;
+   }
+}
+
+/* ..............END of Header portion.................. */
+
+
+/*...............CSS for "HOME" portion.................*/
+
+.main {
+    position: relative;
+    justify-content: center;
+    background: linear-gradient(to bottom,rgba(0,0,0,0.75),rgba(0,0,0,0.5));
+    width: 100%;
+    height: 100vh;
+    z-index:0;
+}
+.homeClass img {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    filter: blur(3px);
+    z-index:-1;
+}
+.content {
+    width: 80%;                         /*Important attribute*/
+	transform: translate(13%,-240%);    /*Important attribute*/
+    position: absolute;
+    text-align:center;
+    z-index: 2;
+}
+.content h1 {
+    color: white;
+    font-size: 60px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+.content p {
+    margin: 10px 0 40px;
+    font-size: 24px;
+    color: white;
+}
+
+@media screen and (max-width:1100px) {
+    .content {
+        width: 75%;                         /*Important attribute*/
+        transform: translate(17%,-270%);    /*Important attribute*/
+    }
+    .content h1 {
+    font-size: 48px; 
+    }
+    .content p {
+        font-size: 20px;       
+    } 
+}
+
+@media screen and (max-width:1000px) {
+    .content {
+        width: 75%;                         /*Important attribute*/
+        transform: translate(17%,-290%);    /*Important attribute*/
+    }
+    .content h1 {
+        font-size: 42px;  
+    }
+    .content p {
+        font-size: 20px;       
+    } 
+}
+
+@media screen and (max-width:841px) {
+    .content {
+        width: 75%;                         /*Important attribute*/
+        transform: translate(17%,-250%);    /*Important attribute*/
+    }
+    .content h1 {
+        font-size: 42px;  
+    }
+    .content p {
+        font-size: 20px;       
+    } 
+}
+
+
+@media screen and (max-width:680px) {
+    .content {
+        width: 75%;                         /*Important attribute*/
+        transform: translate(17%,-240%);    /*Important attribute*/
+    }
+    .content h1 {
+        font-size: 38px;  
+    }
+    .content p {
+        font-size: 20px;       
+    } 
+}
+
+@media screen and (max-width:610px) {
+    .content {
+        width: 75%;                         /*Important attribute*/
+        transform: translate(17%,-255%);    /*Important attribute*/
+    }
+    .content h1 {
+        font-size: 32px; 
+    }
+    .content p {
+        font-size: 18px;       
+    } 
+}
+
+@media screen and (max-width:560px) {
+    .content {
+        width: 75%;                         /*Important attribute*/
+        transform: translate(17%,-240%);    /*Important attribute*/
+    }
+    .content h1 {
+        font-size: 32px;  
+    }
+    .content p {
+        font-size: 18px;       
+    } 
+}
+
+@media screen and (max-width:491px) {
+    .content {
+        width: 75%;                         /*Important attribute*/
+        transform: translate(17%,-215%);    /*Important attribute*/
+    }
+    .content h1 {
+        font-size: 32px; 
+    }
+    .content p {
+        font-size: 18px;       
+    } 
+    .main {
+        background-color: #d83f3f;
+        background-image: linear-gradient(to bottom,rgba(197, 38, 38, 0.69),rgba(201, 147, 147,0.9));
+        min-width: 400px;
+        min-height: auto;
+        background-attachment: fixed;
+    }
+}
+
+@media screen and (max-width:398px) {
+    .content {
+        width: 75%;                         /*Important attribute*/
+        transform: translate(20%,-200%);    /*Important attribute*/
+    }
+    .content h1 {
+        font-size: 32px; 
+    }
+    .content p {
+        font-size: 18px;       
+    } 
+    .main {
+        background-color: #d83f3f;
+        background-image: linear-gradient(to bottom,rgba(197, 38, 38, 0.69),rgba(201, 147, 147,0.9));
+        min-width: 400px;
+        min-height: auto;
+        background-attachment: fixed;
+    }
+}
+
+@media screen and (max-width:382px) {
+    .content {
+        width: 75%;                         /*Important attribute*/
+        transform: translate(22%,-200%);    /*Important attribute*/
+    }
+    .content h1 {
+        font-size: 30px; 
+    }
+    .content p {
+        font-size: 17px;       
+    } 
+    .main {
+        background-color: #d83f3f;
+        background-image: linear-gradient(to bottom,rgba(197, 38, 38, 0.69),rgba(201, 147, 147,0.9));
+        min-width: 400px;
+        min-height: auto;
+        background-attachment: fixed;
+    }
+}
+
+@media screen and (max-width:372px) {
+    .content {
+        width: 75%;                         /*Important attribute*/
+        transform: translate(24.5%,-200%);    /*Important attribute*/
+    }
+    .content h1 {
+        font-size: 30px; 
+    }
+    .content p {
+        font-size: 17px;       
+    } 
+    .main {
+        background-color: #d83f3f;
+        background-image: linear-gradient(to bottom,rgba(197, 38, 38, 0.69),rgba(201, 147, 147,0.9));
+        min-width: 400px;
+        min-height: auto;
+        background-attachment: fixed;
+    }
+}
+
+@media screen and (max-height:650px) {
+    .content {
+        width: 75%;                         /*Important attribute*/
+        transform: translate(17%,-200%);    /*Important attribute*/
+    }
+}
+
+@media screen and (min-height:930px) {
+    .content {
+        width: 75%;                         /*Important attribute*/
+        transform: translate(17%,-340%);    /*Important attribute*/
+    }
+    .content h1 {
+        font-size: 42px;  
+    }
+    .content p {
+        font-size: 20px;       
+    } 
+}
+
+/*...............END of "HOME" portion.................*/
+
+/* ..............CSS for "Teacher" portion..................*/
+.teacherClass {
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.teacherClass h1 {
+    margin-left: 45px;
+    font-size: 35px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik Dirt', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    color: #d83f3f;
+}
+.teacher {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 96vw;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.teacher_content {
+    display: flex;
+    height: 100%;
+    animation: scrolling 14s linear infinite;    /* Adding animation */
+}
+.teacher_content:hover{
+    animation-play-state:paused;
+    cursor: pointer;
+}
+.teacher_content .box{
+    border: .2rem solid rgba(0,0,0,.3);
+    border-radius:10%;
+    padding: 11px 10px 11px 10px;
+    margin-top: 2.80rem;
+    margin-left: 3.28rem;
+    margin-right: 3.28rem; 
+    text-align: center;
+    width: 295px;
+    height: auto;
+    background-color: rgb(247, 213, 171); 
+}
+.box img {
+    height: 10rem;
+    width:10rem;
+    margin:.5rem 0;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.box h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 5px;
+}
+.box p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px; 
+    margin-top: 10px;
+}
+.fa {                             
+    padding: 20px;
+    font-size: 26px;
+    width: 62px;
+    text-align: center;
+    text-decoration: none;
+    margin: 12px 2px;
+    border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+@keyframes scrolling {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+.teacher_content .box:hover{
+    width: 325px;
+    box-shadow: 8px 12px #888888;
+}
+@media screen and (max-width:600px) {
+    .teacher_content .box{
+        padding: 10px 10px 30px 10px;
+        text-align: center;
+        width: 260px;
+        margin-left: 3.15rem;
+        margin-right: 3.15rem; 
+        margin-left: 0px;
+    } 
+}
+
+/* ..............END for "Teacher" portion..................*/
+
+/* ..............CSS for "Course" portion..................*/
+.courseClass {
+    margin: 50px;
+}
+.courseClass h1{
+    margin-left: 45px;
+    font-size: 35px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik Dirt', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    color: #d83f3f;
+}
+.course {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    margin-left: 5%;
+    justify-content: space-around;
+    gap: 4.60rem;
+}
+.course .box {
+    border: .1rem solid rgba(0,0,0,.3);
+    border-left: .3rem solid rgba(0,0,0,.3);
+    border-right: .3rem solid rgba(0,0,0,.3);
+    border-radius:.6rem;
+    padding: 30px 10px 30px 10px;
+    text-align: center;
+    width: 400px;
+    height: auto;
+    justify-content: space-around;
+    background-color:rgb(250, 239, 239);
+} 
+.course h2 {
+    font-size: 30px;
+}
+.course p {
+    font-size: 20px;
+}
+.course button {
+    background-color: #ddd;
+    border: 1px solid rgb(211, 73, 73);
+    color: black;
+    padding: 8px 12px;
+    text-align: center;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: 18px;
+}
+.course button:hover {
+    background-color: #ee4b4b;
+}
+@media screen and (max-width:600px) {
+    .course {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        gap: 3.30rem;
+        margin-left: 0%;
+    } 
+    .course .box {
+        padding: 12px 8px 12px 8px;
+        text-align: center;
+        max-width: 490px;
+        margin-left: 0px;
+        margin-right: 0px;
+        align-self: center;
+    }
+    .course h2 {
+        font-size: 25px;
+    }
+    .course p {
+        font-size: 18px;
+    }
+}
+/* ..............END for "Course" portion..................*/
+
+/* ..............CSS for "Help" portion..................*/
+.helpClass {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10.60rem;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: white;
+    padding: 45px 0px;
+    justify-content: space-around;
+}
+.helpClass .box1 {
+    border: 1px solid black;
+    width: 40%;
+    height: auto;
+}
+.box1 h1 {
+    margin-left:15%;
+    font-size: 28px;
+    color: orange;
+}
+.box1 p {
+    margin-left:15%;
+    font-size: 20px;
+}
+.helpClass .box2 {
+    border: 1px solid black;
+    width: 40%;
+    height: auto;
+}
+.box2 h1 {
+    margin-left:30%;
+    margin-right: 10%;
+    font-size: 28px;
+    color: orange;
+}
+.box2 p {
+    margin-left:30%;
+    margin-right: 10%;
+    font-size: 20px;
+}
+
+@media screen and (max-width:1000px) {
+    .helpClass {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3.60rem;
+        padding: 10px;    
+    }
+    .box1 h1 {
+        font-size: 20px;
+    }
+    .box1 p {
+        font-size: 15px;    
+    }
+    .box2 h1 {
+        font-size: 20px;
+    }
+    .box2 p {
+        font-size: 15px;
+    }    
+}
+
+@media screen and (max-width:600px) {
+    .helpClass {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3.60rem;
+        padding: 10px;    
+    }
+    
+    
+    .box1 h1 {
+        font-size: 13px;
+    }
+    .box1 p {
+        font-size: 10px;    
+    }
+    .box2 h1 {
+        font-size: 13px;
+    }
+    .box2 p {
+        font-size: 13px;
+    }
+    
+}
+
+/* ..............END for "Help" portion..................*/
+
+/* ..............CSS for footer portion.................. */
+footer {
+    width: 100%;
+    margin: 0;
+    background-color: rgb(56, 101, 197);
+    font-size: 18px;
+    z-index: 1;
+    color: rgb(235, 223, 223);
+    text-align: center;
+    padding: 13px 30px;
+    text-decoration: none;
+}
+/* ..............END of footer portion.................. */

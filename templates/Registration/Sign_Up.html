@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sign-up Page</title>    
+        <meta name="description" contents="Course_selling Website Home Page">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="/static/Home_Page_Style/Home_Page_Style.css">  
+        <link rel="stylesheet" type="text/css" href="/static/Registration_Pages_Style/Sign_Up.css"> 
+    </head>
+
+    <body>
+        <header>
+            <ul>
+                <li><a href="/#Home">Home</a></li>
+                <li><a href="/#Teacher">Teacher</a></li>
+                <li><a href="/#Course">Course</a></li>
+                <li><a href="/#Help">Help</a></li>
+            </ul>    
+        </header>
+        <div>
+           {% if messages %}
+                {% for message in messages %}
+                    <div class="msg" role="alert">
+                        <b>{{message}}</b>
+                    </div>
+                {% endfor %}
+            {% endif %}        
+        </div>
+
+        <div class="SignUp-form">
+            <h1>Sign Up Form</h1>
+            <hr>
+            <form method="POST" target="_self">
+                {% csrf_token %}
+
+                <p style="margin-top:22px;">User Name</p>
+                <input type="text" name="username" placeholder="JoeBiden" autocomplete="off" size="28" autofocus pattern="[A-Za-z]{3,12}" required>
+                
+                <p>First Name</p>
+                <input type="text" name="first_name" placeholder="Joe" autocomplete="off" size="28" pattern="[A-Za-z]{3,12}" required>
+                              
+                <p>Last Name</p>
+                <input type="text" name="last_name" placeholder="Biden" autocomplete="off" size="28" pattern="[A-Za-z]{3,12}" required>
+                               
+                <p> E-mail Id</p>
+                <input type="email" name="email" placeholder="joebiden@gmail.com" autocomplete="off" size="28" required>
+                
+                <p>Enter Password</p>
+                <input type="password" name="password1" minlength="8" maxlength="12" placeholder="Enter Password" size="28" autocomplete="off" required>
+                
+                <p>Confirm Password</p>
+                <input type="password" name="password2" minlength="8" maxlength="12" placeholder="Confirm Password" size="28" autocomplete="off" required>
+
+                <button type="submit" value="button" class="button">Sign Up</button>
+            </form>   
+        </div>
+        <footer>
+            <p style="font-family: 'Open Sans', sans-serif;">Created By - &nbsp; <span style="color:black;">Mr.Pijush Kishor Dey &nbsp;</span>| All Rights Reserved</p>
+        </footer>
+    </body>
+</html>

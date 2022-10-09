@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Home Page</title>
+        <meta name="author" content="Pijush Kishor Dey">
+        <meta name="keywords" contents="Android_Development,Core_JAVA, Ethical_Hacking,Programming_with_C,Testing,Web_Development">                 
+        <meta name="description" contents="Course_selling Website Home Page">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Montserrat:wght@300&family=Open+Sans:wght@300;500;600&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+       
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Montserrat:wght@300&family=Open+Sans:wght@300;500;600&family=Rubik+Dirt&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" type="text/css" href="/static/Home_Page_Style/Home_Page_Style.css">
+    </head>
+
+    <body>
+
+<!---- Beginning of Header Portion -->  
+        <header>
+            <ul>
+                <li><a href="/#Home">Home</a></li>
+                <li><a href="/#Teacher">Teacher</a></li>
+                <li><a href="/#Course">Course</a></li>
+                <li><a href="/#Help">Help</a></li>
+            </ul>    
+        </header>
+
+<!---- Beginning of "Home" Portion --> 
+        <div id="Home" class="homeClass">  
+            <img src="/static/Home_Page_Photo/Front_Page2.jpg" alt="Fron_Page_Photo">
+            <div class="main"></div>
+                          
+            <div class="content">
+                <h1><b>PIJUSH &nbsp;TECHNOLOGIES</b></h1>
+                <p>~100% Job Guranteed. We are commited to our promise. Naresh Technologies helps you create impactfule-courses and break
+                the limitations of formal education by sharing your expertise with learners from any part of the world.~</p>     
+            </div>   
+        </div>    
+        <br>
+        <br>
+        <br>
+        <br>
+<!--- Beginning of "Teacher" Portion -->
+        <div class="teacherClass">
+            <h1 id="Teacher"><span style="font-size:42px">T</span>EACHERS</h1> 
+            <br>
+                <hr>
+            <br>
+            <section class="teacher">
+                <div class="teacher_content">
+                    {% for n in teacher_data %}
+                        <div class ="box">
+                            <img src="{{n.profile_pic.url}}">
+                            <h2>{{n.name}}</h2>
+                            <p>{{n.description}}</p>
+                            <a href="{{n.linkedInLink}}" target="_blank" class="fa fa-linkedin"></a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </section>
+        </div>
+        <br>
+        <br>
+
+<!--- Beginning of "Course" Portion -->
+        <div class="courseClass">
+            <h1 id="Course"><span style="font-size:42px;">A</span>VAILABLE <span style="font-size:38px;">C</span>OURSES</h1> 
+            <br>
+                <hr>
+            <br>
+            <section class="course">
+                {% for n in course_data %}
+                        <div class ="box">
+                            <h2>{{n.name}}</h2>
+                            <hr>
+                            <p>{{n.description}}</p>
+                            <br>
+                            <a href="{{n.url}}" style="text-decoration: none;"><button>LEARN MORE ></button></a>
+                        </div>
+                {% endfor %}
+            </section>    
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>  
+
+<!--- Beginning of "Help" Portion -->
+        <div id="Help">
+            <div class="helpClass">
+                <div class="box1">
+                    <h1>Why us ?</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                </div>
+                
+                <div class="box2">
+                    <h1>CALL US</h1>
+                    <p>68577876</p>
+                    <br>
+                    <br>
+                    <h1>MAIL US</h1>
+                    <p>someone@gmail.com</p>
+                    <br>
+                    <br>
+                    <h1>OUR OFFICE</h1>
+                    <p>North Basudevpur, Chowdhury Para, P.O. Belgharaia, Kolkata-700056</p>
+                </div>
+            </div>         
+        </div>
+
+<!---- Beginning of Footer Portion -->        
+        <footer>
+            <p style="font-family: 'Open Sans', sans-serif;">Created By - &nbsp; <span style="color:black;">Mr.Pijush Kishor Dey &nbsp;</span>| All Rights Reserved</p>
+        </footer>       
+    </body>
+</html>    

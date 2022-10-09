@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sign-up Page</title>    
+        <meta name="description" contents="Course_selling Website Home Page">
+        <meta name="viewport" content="width=device-width, user-scalable=no">    
+        <link rel="stylesheet" type="text/css" href="/static/CoursePageStyle/CoursePage.css"> 
+        
+    </head>
+
+    <body>
+        <header>
+            <a href="/#Help">Help</a>
+            <a href="/#Course">Course</a>
+            <a href="/#Teacher">Teacher</a>
+            <a href="/#Home#Help">Home</a>    
+        </header>
+        
+        <div class="container">
+            <h2>{{data4.name}}</h2>
+            <hr>
+            <div class="content">
+                <p><span>Course Duration: </span>{{data4.course_duration}}</p>
+                <hr>
+                <p><span>Suitable For: </span>{{data4.suitable_for}}</p>
+                <hr>
+                <p><span>Course Objective: </span>{{data4.course_objective}}</p>
+                <hr>
+                <p><span>Prerequisite: </span>{{data4.prerequisite}}</p>
+                <hr>
+                <p><span>Course Fee: </span>{{data4.course_fee}}</p>
+                <hr>
+                <p><span>Fee Structure: </span>{{data4.Fee_structure}}</p>
+                <hr>
+                <h4>Course Content:</h4>
+                <div class="syllabus">{{data4.course_content | safe}}</div>
+                <br>
+                <a href="/FormData/SignIn/"><button>REGISTER &nbsp; NOW</button></a>
+            </div>  
+        </div>
+        <footer>
+            <p style="font-family: 'Open Sans', sans-serif;">Created By - &nbsp; <span style="color:black;">Mr.Pijush Kishor Dey &nbsp;</span>| All Rights Reserved</p>
+        </footer>  
+    </body>
+</html>            
