@@ -1,8 +1,20 @@
-for i in range (1,5):
-    for j in range(1,5-i):
-        print(' ', end=' ')
-    for j in range (i,0,-1):
-        print(j, end=' ')
-    for j in range(2, i+1):
-        print(j, end=' ')
-    print()
+x = 'A'
+y = 'B'
+print(x^y)
+
+
+# class Solution {
+#     public int eliminateMaximum(int[] dist, int[] speed) {
+#         PriorityQueue<Double> time = new PriorityQueue<>();
+#         for(int i=0;i<dist.length;i++){
+#             time.add((double)(dist[i]/speed[i]));
+#         }
+#         double min = 0.0;
+#         int count=0;
+#         while(!time.isEmpty() && time.poll()>min){
+#             min += 1.0;
+#             count++;
+#         }
+#         return count;
+#     }
+# }
