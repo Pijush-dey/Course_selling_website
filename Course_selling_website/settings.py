@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'Courses',
     'tinymce',
     'PasswordConfirmation',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
