@@ -152,3 +152,9 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'deyp0219@gmail.com'
 EMAIL_HOST_PASSWORD = 'wlrwwlynncnyaxnq'
+
+
+GRAPH_MODELS = {
+  'all_applications': True,
+  'group_models': True,
+}
